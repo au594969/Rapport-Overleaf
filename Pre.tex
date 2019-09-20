@@ -1,0 +1,98 @@
+%%%%%===========================================================%%%%
+%%%%% This Latex Preamble was Made by:                          %%%%
+%%%%% Christian Moos Lund - 2019                                %%%%
+%%%%% AU - Electrical Energy Technoligy                         %%%%
+%%%%%===========================================================%%%%
+
+%=================Kopier til main============================
+%\documentclass[a4paper,oneside,article]{memoir}
+%\include{Pre}
+%=============================================================
+% ---------------Preamble fra Latex kursus---------------------
+\usepackage[utf8]{inputenc}                 % Korrekt håndtering af æ, ø og å
+\usepackage[T1]{fontenc}                    % Korrekt håndtering af æ, ø og å
+\usepackage{microtype}                      % Typografisk magi! Giver bl.a. pænere orddeling
+\usepackage{graphicx}                       % Gør det muligt at indsætte billeder
+\usepackage{amsmath}                        % Giver adgang til uundværlige matematikting
+\usepackage{siunitx}                        % Dette  gør alle mat notationer nemmer ! 
+\usepackage[danish]{babel}                  % Danske betegnelser og orddeling
+\renewcommand{\danishhyphenmins}{22}        % Bedre dansk orddeling
+%--------------------Selv fundet Pakker------------------------
+\usepackage[margin=1in]{geometry}           % Marginer
+\usepackage{ragged2e}                       % Retter alt ind til venstre
+\usepackage{parskip}                        % Strækker ud til begge marginer
+\usepackage{booktabs}                       % Tablesgenerator bad om det
+\setlength{\parindent}{0pt}                 % Fjerner indents
+\usepackage[bottom]{footmisc}               % Placer fodnoter i bunden af siden.
+\setcounter{secnumdepth}{2}                 % Indstiller numerering af subsection (3 giver nr. til subsubsec.)
+%\setcounter{tocdepth}{3}                   % Indstil til at inkluder subsection i Indholdsfortegnelse
+%\usepackage{todonotes}
+%--------------------Ekstra------------------------------------
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{floatrow}
+\usepackage{lscape}
+\usepackage{comment}
+\usepackage{multirow}
+\usepackage{enumitem}                       % Enumerate med bogstaver
+%---------------------For side opsætning-----------------------
+\usepackage{wallpaper}
+%--------------------Side opsætning----------------------------
+\usepackage{tocloft}                        % Header/Footer Indholdfortegnelse
+\usepackage{lastpage}                       % Til side X af Y (side nummerering)
+\usepackage{fancyhdr}
+\fancyhf{}                                  % sets both header and footer to nothing
+\fancyhead[C]{PRJ3 EE3 \hspace{5,3cm} Gruppe 3 \hspace{4,1cm} Ingeniørhøjskolen \\ \rhead{Aarhus Universitet}}
+\fancyfoot[C]{Side \thepage\ af \pageref{LastPage}}
+%--------------------Referenceværktøj--------------------------
+\usepackage{url}
+%------------------- fysik notationer -------------------------
+\usepackage{physics}
+%----------------------- Macroer ------------------------------
+
+%----------------------Tabeller--------------------------------
+%\toprule               Top tyklinje
+%\midrule               Mid tyndlinje
+%\bottomrule            Bund tyklinje
+
+%\begin{minipage}[t]{7CM} TEXT \vspace{1mm}\end{minipage}        Tekstombrydning
+
+%\RaggedRight           Aligen table to the left side (replace \centering)
+%\Raggedleft            Aligen table to the Right side (replace \centering)
+%-------------------Andre nytte komandoer----------------------
+%\plainbreak{x} x = antal linje jeg vil hoppe. 
+%\graphicspath{ {./images/} }
+%\begin{landscape} og \end{landscape}
+
+%-------------------Side-by-side figur-------------------------
+%\begin{figure}[H]
+%\begin{floatrow}
+%\ffigbox{\includegraphics[scale = 1]{}}{\caption{}
+%\label{fig:Pkontrolergraf}}
+%\ffigbox{\includegraphics[scale = 1]{}}{\caption{}
+%\label{fig:}}
+%\end{floatrow}
+%\end{figure}
+
+
+%%%%=========================Tegn tæller prototype======================
+%%%%-------------------Inde i doc---------------------------------------
+%%%\quickcharcount{main} 
+%%%%---------------------Ignor code-------------------------------------
+%%%---%%TC:ignore og %%TC:endignore
+%%%%----------------------Tegn macro------------------------------------
+%%%\newread\tmp
+%%%
+%%%\newcommand{\quickcharcount}[1]{%
+%%%    \immediate\write18{texcount -1 -sum -merge -char #1.tex > #1-chars.sum}%
+%%%    \openin\tmp=#1-chars.sum%
+%%%    \read\tmp to \thechar%
+%%%    \closein\tmp%
+%%%} <----Husk
+%%%
+%%%\newcommand{\quickwordcount}[1]{%
+%%%    \immediate\write18{texcount -1 -sum -merge #1.tex > #1-words.sum}%
+%%%    \openin\tmp=#1-words.sum%
+%%%    \read\tmp to \theword%
+%%%    \closein\tmp%
+%%%} <----Husk
+%%%%----------------------------------------------------------------------
