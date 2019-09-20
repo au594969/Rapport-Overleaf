@@ -1,0 +1,26 @@
+\documentclass[a4paper,oneside,article]{memoir}
+\include{Pre}
+%-------------------Bilag Reference--------------------------------------
+\usepackage[resetlabels,labeled,]{multibib}
+\newcites{A}{Bilag}
+\pagestyle{fancy}
+\AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{fancy}}} 
+
+\begin{document}
+
+%-------------------Forside----------------------------------------------
+\input{Forside.tex}
+\newpage
+%-------------------Abstract--------------------------------------------
+
+%-------------------Indholdsfortenelse-----------------------------------
+
+\input{TOC.tex}
+
+%--------------------Kapitler--------------------------------------------
+%\chapter{Overskrift}
+%\section{Første}
+%\subsection{Anden}
+%\subsubsection{Tredje}
+
+\end{document}
